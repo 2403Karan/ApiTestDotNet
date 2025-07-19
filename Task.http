@@ -1,0 +1,12 @@
+@Task_HostAddress = http://localhost:5065
+
+GET {{Task_HostAddress}}/testapp/api/v1/offices/
+Accept: application/json
+
+###
+
+// Make sure id is a valid office id. Example: 0f4eac82-7f2b-4447-9a9a-5385ad44a809
+GET {{Task_HostAddress}}/testapp/api/v1/offices/{id}
+Accept: application/json
+
+###
