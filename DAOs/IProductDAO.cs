@@ -6,9 +6,9 @@ using Task.Models;
 
 namespace Task.DAOs
 {
-    public interface IOfficeDAO
+    public interface IProductDAO
     {
-        public IEnumerable<Office> GetAllOffices();
-        public Office? GetOfficeById(Guid id);
+        IEnumerable<Product> GetAllProducts();
+        Product? GetProductById(int productId);
     }
 }
